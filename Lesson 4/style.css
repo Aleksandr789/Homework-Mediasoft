@@ -1,0 +1,66 @@
+body{
+    background: #000000;
+}
+form {
+padding:25vh;
+}
+
+fieldset {
+    padding-top:30px;
+    margin: 0 auto;
+    border: 2px solid #b8ffff;
+    border-radius: 15px;
+    box-shadow: 0 0 1px #1593bf, 0 0 2px #1593bf, 0 0 6px #1593bf, 0 0 12px #1593bf, 
+	inset 0 0 1px #1593bf, inset 0 0 4px #1593bf, inset 0 0 8px #1593bf, inset 0 0 12px #1593bf
+}
+
+div {
+	display: flex;
+    position: relative;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 250px;
+	color: #ad79c1;
+	border: 2px solid #ffc9ff;
+    box-shadow: 0 0 1px #cf4ddb, 0 0 2px #cf4ddb, 0 0 6px #cf4ddb,0 0 12px #cf4ddb, 
+	inset 0 0 1px #cf4ddb, inset 0 0 2px #cf4ddb, inset 0 0 6px #cf4ddb, inset 0 0 12px #cf4ddb;
+}
+
+input[type="text"],
+input[type="password"],
+.button {
+	
+    padding: 15px;
+	outline: none;
+    margin: 15px 30px;
+    font-size: 10pt;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.floating-label {
+    color: #ad79c1;
+    position: absolute;
+    top: 26px;
+    left: 60px;
+    transition: 1s ease all;
+}
+
+.button {
+	margin-bottom:30px;
+	border: 2px solid #ffb0db;
+	color: #dc498d;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #b2285f, 0 0 2px #b2285f, 0 0 6px #b2285f, 0 0 12px #b2285f, 
+	inset 0 0 1px #b2285f, inset 0 0 2px #b2285f, inset 0 0 6px #b2285f, inset 0 0 12px #b2285f;
+	width: 285px;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+    top: 18px;
+    font-size: 10pt;
+}
+
