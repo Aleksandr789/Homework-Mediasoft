@@ -1,0 +1,44 @@
+div {
+	border: 6px solid rgb(50, 57, 115);
+}
+
+table {
+	width: 100%;
+	color: rgb(255, 255, 255);
+	border-collapse: collapse;
+	overflow: hidden;
+	position: relative;
+	height: 200px;
+}
+
+thead {
+	background: #5d62a8;
+	margin: 10vw 0;
+	height: 50px;
+}
+
+tbody {
+	background: -webkit-linear-gradient(45deg, rgb(195, 212, 235), rgb(123, 124, 179));
+	margin: 0;
+	height: 250px;
+}
+ 
+td, th {
+    position: relative;
+  }
+
+  tbody tr:hover {
+    background-color: rgba(245, 245, 245, 0.5);
+  }
+
+  tbody td:hover::after,
+  tbody th:hover::after {
+    background-color: rgba(245, 245, 245, 0.5);
+    height: 500px;
+    width: 100%;
+    left: 0;
+    top: -250px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+  }
